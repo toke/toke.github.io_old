@@ -1,0 +1,32 @@
+html {
+    background: #333;
+    color: #333;
+    font-family: 'Palatino', serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+#container {
+    -webkit-box-shadow: 0 0 30px black;
+    background: white;
+    margin: 25px auto 400px auto;
+    padding: 40px 60px;
+    text-align: left;
+    max-width: 800px;
+}
+a {
+    color: darkgreen;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+dd {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top:40px;
+    border-top:1px solid #eee;
+    font-size:16px;
+}

@@ -1,7 +1,7 @@
 Personal Github page
 ====================
 
-Using Jekyll templates
-https://github.com/mojombo/jekyll/wiki/template-data
-More information:
-http://pages.github.com/
+Using Jekyll templates.
+
+* https://github.com/mojombo/jekyll/wiki/template-data
+* http://pages.github.com/

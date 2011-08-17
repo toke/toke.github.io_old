@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <meta name="description" content="Tokes Github page">
+        <title>{% if page.title %}{{ page.title }} | {% endif %}Toke's github page</title>
+        <meta name="description" content="Tokes github page">
         <meta name="author" content="Thomas Kerpe">
         
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="touch-icon.png">
         <link rel="stylesheet" href="/assets/toke.css">
     </head>
-    <body>
+    <body class="{{ page.layout }}">
     
     <div id="container">
     <article>
@@ -26,9 +26,9 @@
         <li><a href="#about">about</a></li>
         </ul>
     </nav>
-
-  {{ content }}
-    
+    <section id="content">
+        {{ content }}
+    </section>
     </article>
 
     <footer>

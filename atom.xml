@@ -11,7 +11,7 @@ layout: nil
  <id>http://toke.github.com/</id>
  <author>
    <name>Thomas Kerpe</name>
-   <email>toke@toke.de</email>
+   <email>web@toke.de</email>
  </author>
 
  {% for post in site.posts %}

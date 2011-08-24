@@ -15,7 +15,7 @@ He loves Python, CouchDB, Android and other cool technologies.
 Good Reads
 ==========
 
-Starting to collect good reads:
+Starting to collect recent good reads:
 
  * Javascript the good parts - Douglas Crockford
  * Fermats letzter Satz (Fermat's last theorem - Simon Singh)

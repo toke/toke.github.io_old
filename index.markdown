@@ -17,6 +17,6 @@ Good Reads
 
 Starting to collect recent good reads:
 
- * Javascript the good parts - Douglas Crockford
+ * [Javascript the good parts](http://javascript.crockford.com/) - [Douglas Crockford](http://crockford.com/)
  * Fermats letzter Satz (Fermat's last theorem - Simon Singh)
  * Goedel Escher Bach - Douglas Hofstadter

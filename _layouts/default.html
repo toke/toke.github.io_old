@@ -6,10 +6,10 @@
         <meta name="description" content="Tokes github page">
         <meta name="author" content="Thomas Kerpe">
         
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        <link rel="apple-touch-icon" href="/assets/touch-icon.png">
-        <link rel="stylesheet" href="/assets/toke.css">
-        <link href="/atom.xml" rel="alternate" title="Thomas 'Toke' Kerpe" type="application/atom+xml">
+        <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">
+        <link rel="apple-touch-icon" href="{{ site.url }}/assets/touch-icon.png">
+        <link rel="stylesheet" href="{{ site.url }}/assets/toke.css">
+        <link href="{{ site.url }}/atom.xml" rel="alternate" title="Thomas 'Toke' Kerpe" type="application/atom+xml">
     </head>
     <body class="{{ page.layout }}">
     
@@ -22,9 +22,9 @@
     
     <nav>
         <ul>
-        <li><a href="/blog/">blog</a></li>
+        <li><a href="{{ site.url }}/blog/">blog</a></li>
         <li><a href="http://toke.de">website</a></li>
-        <li><a href="/#about_me">about me</a></li>
+        <li><a href="{{ site.url }}/#about_me">about me</a></li>
         </ul>
     </nav>
     <section id="content">

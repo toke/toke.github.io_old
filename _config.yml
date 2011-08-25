@@ -2,5 +2,5 @@ url: "http://toke.github.com"
 pygments: true
 permalink: pretty
 paginate: 10
-exclude: fabfile.py
+exclude: fabfile.py fabfile.pyc
 

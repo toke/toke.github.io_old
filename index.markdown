@@ -10,7 +10,7 @@ Online ego of an coder, original throws shadow when light is on.
 
 I'm a software developer currently located in Karlsruhe (Germany). Most of my work is web and large dataset related. I'm a data geek. 
 
-I loves Python, CouchDB, Android and other cool technologies.
+I love Python, CouchDB, Android and other cool technologies.
 
 Good Reads
 ==========

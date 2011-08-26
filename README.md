@@ -9,3 +9,13 @@ Using Jekyll templates.
 
 * https://github.com/mojombo/jekyll/wiki/template-data
 * http://pages.github.com/
+
+Using fabric to deploy and local serve:
+
+To publish the site on github use:
+
+ fab publish
+
+Locally serve the site on http://127.0.0.1:4000:
+
+ fab serve

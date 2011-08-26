@@ -1,6 +1,4 @@
-from fabric.api import *
-import os
-import fabric.contrib.project as project
+from fabric.api import local
 
 def serve():
     local('jekyll --url http://127.0.0.1:4000 --server')

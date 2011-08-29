@@ -30,6 +30,11 @@
     <section id="content">
         {{ content }}
     </section>
+    {% if page.license %}
+    <footer>
+    License: {{ page.license }}
+    </footer>
+    {% endif %}
     </article>
 
     <footer>

@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Grundlagen was passiert beim "surfen"
+license: '<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">CC BY-NC-SA 2.0</a>'
 ---
 
   *__Achtung:__ Dieser Artikel ist semantisch nicht in jedem Punkt korrekt.
   Bei Gelegenheit wird er überarbeitet. Die Grundlagen stimmen jedoch.
   Für die angedachte Zielgruppe des Artikels ist dies wohl nicht relevant.*
-
 
 Grundlagen: Was passiert beim "surfen"?
 =======================================

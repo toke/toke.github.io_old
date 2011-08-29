@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Kernel unter Debian kompilieren"
+license: '<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">CC BY-NC-SA 2.0</a>'
 ---
 
 *__Achtung__: Dieser Artikel ist aus dem Jahr 2004 und wurde zuletzt im Jahr 2008

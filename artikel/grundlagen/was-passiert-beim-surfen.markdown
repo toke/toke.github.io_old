@@ -10,7 +10,7 @@ Grundlagen: Was passiert beim "surfen"?
 Es handelt sich hier nicht um eine Darstellung bis ins letze Detail. Sie ist für den interessierten Laien gedacht, der einen Überblick über die Funktionsweise des Internets erhalten soll.
 Das Internet ist ein Kommunikationsmedium mit verschiedensten Diensten und Kanälen. Einer davon, den wohl neben der E-Mail am meisten genutzen - das World-Wide-Web (www) dient hier als Beispiel. 
 
-Es handelt sich hierbei um eine Arbeitsversion. Anregungen und Korrekturen nehme ich sehr gerne via E-Mail oder Seitenkommentar entgegen.
+Es handelt sich hierbei um eine Arbeitsversion. Anregungen und Korrekturen nehme ich sehr gerne via E-Mail entgegen.
 
 Die Adresse
 ===========

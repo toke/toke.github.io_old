@@ -25,8 +25,12 @@ dd {
     margin-bottom: 20px;
 }
 
-footer {
+div#container > footer {
     margin-top:40px;
     border-top:1px solid #eee;
     font-size:16px;
+}
+
+article > footer {
+    font-size: 14px;
 }

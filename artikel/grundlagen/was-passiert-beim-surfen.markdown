@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Grundlagen was passiert beim "surfen"
-license: '<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">CC BY-NC-SA 2.0</a>'
+license: ['CC BY-NC-SA 2.0', 'http://creativecommons.org/licenses/by-nc-sa/2.0/de/']
 ---
 
   *__Achtung:__ Dieser Artikel ist semantisch nicht in jedem Punkt korrekt.

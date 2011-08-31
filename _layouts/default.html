@@ -30,11 +30,12 @@
     <section id="content">
         {{ content }}
     </section>
-    {% if page.license %}
     <footer>
-    License: {{ page.license }}
-    </footer>
+    Posted: {{ site.time | date_to_long_string }}
+    {% if page.license %}
+        License: <a href="{{ page.license[1] }}" rel="license">{{ page.license[0] }}</a>
     {% endif %}
+    </footer>
     </article>
 
     <footer>

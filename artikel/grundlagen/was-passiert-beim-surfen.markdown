@@ -4,10 +4,6 @@ title: Grundlagen was passiert beim "surfen"
 license: ['CC BY-NC-SA 2.0', 'http://creativecommons.org/licenses/by-nc-sa/2.0/de/']
 ---
 
-  *__Achtung:__ Dieser Artikel ist semantisch nicht in jedem Punkt korrekt.
-  Bei Gelegenheit wird er überarbeitet. Die Grundlagen stimmen jedoch.
-  Für die angedachte Zielgruppe des Artikels ist dies wohl nicht relevant.*
-
 Grundlagen: Was passiert beim "surfen"?
 =======================================
 
@@ -19,17 +15,19 @@ Es handelt sich hierbei um eine Arbeitsversion. Anregungen und Korrekturen nehme
 Die Adresse
 ===========
 
-Zuerst einmal schauen wir uns die Adressleiste des Browsers an:
+Zuerst einmal schauen wir uns die Adressleiste des Browsers an. Wir sehen die Adresse dieser Seite, auch URL (Uniform Resource Locator) genannt:
 
 **http**://www.toke.de/artikel/grundlagen/was-passiert-beim-surfen/
-Der Webbrowser zerlegt diese Zeichenkette in ihre logischen Bestandteile: http Definiert das Protokoll - hier http (HyperText Transmission Protocol) andere übliche Protokolle sind https - hierbei wird der Datenverkehr verschlüsselt übertragen und ftp. Das Protokoll gibt an wie sich der Rechner des surfenden Benutzers (Client) und der des Anbieters der Seite (Server) "unterhalten". Für den Anwender ist es im Endeffekt egal wie die Daten übertragen werden - Hauptsache sie kommen an. Interessant ist es jedoch wieder wenn https verwendet wird hierbei wird der Datenverkehr verschlüsselt, ein Mitlesen anderer ist nahezu ausgeschlossen. Gerade beim Online-Banking und Einkauf ist dies Wichtig! Um https verwenden zu können muß sowohl der Server als auch der Browser des Benutzers dies unterstützen - dies ist auf Serverseite leider viel zu selten der Fall.
+Der Webbrowser zerlegt diese Zeichenkette in ihre logischen Bestandteile: http Definiert das Protokoll - hier http (HyperText Transmission Protocol) andere übliche Protokolle sind https - hierbei wird der Datenverkehr verschlüsselt übertragen und ftp. Das Protokoll gibt an wie sich der Rechner des surfenden Benutzers (Client) und der des Anbieters der Seite (Server) "unterhalten". Für den Anwender ist es im Endeffekt egal wie die Daten übertragen werden - Hauptsache sie kommen an. Interessant ist es jedoch wieder wenn https verwendet wird hierbei wird der Datenverkehr verschlüsselt, ein Mitlesen anderer ist nahezu ausgeschlossen. Gerade beim Online-Banking und Einkauf ist dies Wichtig! Um https verwenden zu können muß sowohl der Server als auch der Browser des Benutzers dies unterstützen - dies ist auf Serverseite leider viel zu selten der Fall. Di
 
 http://**www.toke.de**/artikel/grundlagen/was-passiert-beim-surfen/
-Hierbei handelt es sich um den sogenannten **Domainnamen**. Dieser ist eine menschenlesbare Adresse des Servers, den man zu erreichen wünscht. Oft ist es so, dass sich unter vielen verschiedenen Adressen ein und derselbe Rechner meldet, so ist in diesem Fall toke.de und thomas.kerpe.info derselbe Rechner und führt zur selben Startseite. Eine Genauere Betrachtung von Domainnamen findet man unter Domainnamen.
+Hierbei handelt es sich um den sogenannten [**Domainnamen**](#domainnamen). Dieser ist eine menschenlesbare Adresse des Servers, den man zu erreichen wünscht. Oft ist es so, dass sich unter vielen verschiedenen Adressen ein und derselbe Rechner meldet, so ist in diesem Fall toke.de und thomas.kerpe.info derselbe Rechner und führt zur selben Startseite. Eine genauere Betrachtung von Domainnamen folgt später.
 
 http://www.toke.de**/artikel/grundlagen/was-passiert-beim-surfen/**
 Der **Pfad und Dateiname** der aufzurufenden Seite oder Datei. Sollte diese nicht im Hauptverzeichnis (ROOT-Verzeichnis) liegen befinden sich vor dem Dateinamen noch die Pfad-Angaben z.B. http://www.toke.de/artikel/grundlagen/was-passiert-beim-surfen/. Zu Beachten gilt, dass es sich bei den Trennzeichen zwischen den Rechner, Pfad und Dateiangaben um einen einfachen "Slash" also Schrägstrich (/) handelt. Unter Windows ist der Trenner der Pfadangaben ein sog. "Backslash" also ein umgekehrter Schrägstrich (\). Sollte dieser versehentlich eingegeben werden führt das im Großteil der Fälle zu einer unauffindbaren Seite.
 Da es sich bei einem Großteil der Internet-Server nicht um Windows sondern um Unix-Syteme handelt gelten einige Regeln, die man von Windows kennt nicht - andere kommen dazu. So ist zum Beispiel beim Großteil der eingesetzten Systeme so, daß Sie zwischen Groß und Kleinschreibung unterscheiden. "Artikel/Grundlagen/was-passiert-beim-Surfen/" und "artikel/grundlagen/was-passiert-beim-surfen/" sind also verschiedene Adressen!
+
+*__Anmerkung:__ In der Realität handelt es sich meistens nicht um den tatsächlichen Pfad oder Dateiname einer "Resource" sondern lediglich einen innerhalb der Domain eindeutigen Bezeichner. Eine URL kann noch aus weiteren Teilen bestehen: Anker oder Fragment (z.B. http://www.toke.de/artikel/grundlagen/was-passiert-beim-surfen/#domainnamen und Query-Strings (z.B. http://www.google.de/?q=bing). URL ist in [RFC 1738](https://tools.ietf.org/html/rfc1738) definiert.*
 
 Domainnamen
 ===========
@@ -46,10 +44,9 @@ Die folgenden Einträge oft "www" werden **Subdomain** oder **Hostname** genannt
 
 Wir wissen nun, wie ein Domainname aufgebaut ist. Der Computer zerlegt in also in seine Bestandteile und kann nun - vereinfacht ausgedrückt - eine Anfrage bei den Domainservern - eine Art Adressbuch - durchführen. 
 Sollte die Domain so wie sie eingegeben ist in den Datenbeständen verfügbar sein, so gibt der Domainserver dem Anwenderprogramm eine sog. IP-Adresse zurück unter der der gewünschte Server erreichbar ist.
-Wenn also kein genau passender Eintrag in den Domainservern hinterlegt ist, kann die gewünschte Seite nicht aufgerufen werden. Meist verweisen mehrere Domaineinträge auf die selben Adressen. Es kann also schon ein Unterschied sein, ob man "www.thomas.kerpe.net" oder "thomas.kerpe.net" eingibt.
-Ermitteln der IP-Adresse
+Wenn also kein genau passender Eintrag in den Domainservern hinterlegt ist, kann die gewünschte Seite nicht aufgerufen werden. Meist verweisen mehrere Domaineinträge auf die selben Adressen. Es kann also schon ein Unterschied sein, ob man "www.toke.de" oder "toke.de" eingibt.
 
-Die Namensauflösung kann man manuell durchführen: ein Terminal/Shell aufmachen und dann folgendes eingeben: "nslookup www.toke.de". Sie erhalten nun die IP-Adresse des Servers.
+*__Ermitteln der IP-Adresse:__ Die Namensauflösung kann man manuell durchführen: ein Terminal/Shell aufmachen und dann folgendes eingeben: "nslookup www.toke.de". Sie erhalten nun die IP-Adresse des Servers.*
 
 IP-Adressen
 ===========

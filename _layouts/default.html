@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{% if page.title %}{{ page.title }} | {% endif %}Toke's github page</title>
-        <meta name="description" content="Tokes github page">
+        <title>{% if page.title %}{{ page.title }} | {% endif %}Toke's page</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Toke's page{% endif %}">
         <meta name="author" content="Thomas Kerpe">
         
         <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">

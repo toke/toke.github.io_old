@@ -56,7 +56,7 @@ Wie im Kapitel "Domainnamen" genauer beschrieben wird ein großer Aufwand getrie
 
 Eine IP-Adresse besteht in der üblichen Schreibweise aus 4 durch Punkte getrennte Zahlenblöcken zwischen 0 und 255. So ist 207.46.249.27 zum Beispiel eine IP-Adresse die zu dem Domainnamen www.microsoft.com gehört.
 
-Neben den herkömmlichen IP-Adressen (IPv4 oder IP Version 4), die sich durch 4 durch Punkte getrennte Zahlenblöcken im Bereich vom 0-255 auszeichen, gibt es den verspäteten Nachfolger, IPv6 bzw IP Version 6. Eine IPv6-Adresse sieht, wie am Beispiel von toke.de so aus: 2a01:4f8:100:14a5::3. Diese ist jedoch nur relevant wenn man selbst eine IPv6-Verbindung hat, also der eigene Rechner selber über IPv6 auf das Internet zugreifen kann.
+Neben den herkömmlichen IP-Adressen (IPv4 oder IP Version 4), die sich durch 4 durch Punkte getrennte Zahlenblöcken im Bereich vom 0-255 auszeichen, gibt es den verspäteten Nachfolger, IPv6 bzw IP Version 6. Eine IPv6-Adresse sieht, wie am Beispiel von toke.de, so aus: 2a01:4f8:100:14a5::3. Diese ist jedoch nur relevant wenn man selbst eine IPv6-Verbindung hat, also der eigene Rechner selber über IPv6 auf das Internet zugreifen kann.
 
 Datenübertragung mit HTTP
 =========================

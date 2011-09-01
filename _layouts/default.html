@@ -30,10 +30,15 @@
     <section id="content">
         {{ content }}
     </section>
-    <footer>
-    Posted: {{ site.time | date_to_long_string }}
+        <footer>
+        <span class="date">
+        Posted at {{ site.time | date_to_long_string }}
+        </span>
+        by <span class="author">toke</span>
     {% if page.license %}
+        &middot; <span class="license">
         License: <a href="{{ page.license[1] }}" rel="license">{{ page.license[0] }}</a>
+        </span>
     {% endif %}
     </footer>
     </article>
@@ -42,6 +47,7 @@
     <p>Follow me on Twitter <a href="https://twitter.com/#!/brxs">@brxs</a> or
     <a href="https://plus.google.com/106481926382248079446/">Google+</a><br>
     <a href="https://github.com/toke/toke.github.com">Get Site Source</a></p>
+    <a href="http://flattr.com/thing/40090/Tokes-Blog" target="_blank"><img src="{{ site.url }}/assets/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
     </footer>
 
     </div>

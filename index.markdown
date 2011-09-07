@@ -12,6 +12,12 @@ I'm a software developer currently located in Karlsruhe (Germany). Most of my wo
 
 I love [Python](http://www.python.org), [CouchDB](http://couchdb.apache.org), [Android](http://www.android.com) and other cool technologies… and of course Coffee!
 
+articles
+========
+
+ * [Grundlagen: was passiert beim "surfen"?](http://toke.de/artikel/grundlagen/was-passiert-beim-surfen/index.html) (german)
+ * [Kernel unter Debian kompilieren](http://toke.de/artikel/linux/debian-kernel-bauen/) (german, -2008)
+
 good reads
 ==========
 

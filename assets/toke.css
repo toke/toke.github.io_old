@@ -7,15 +7,15 @@ html {
     text-align: center;
 }
 #container {
-    -webkit-box-shadow: 0 0 30px black;
-    background: white;
+    -webkit-box-shadow: 0 0 30px #000;
+    background: #fff;
     margin: 25px auto 400px auto;
     padding: 40px 60px;
     text-align: left;
     max-width: 800px;
 }
 a {
-    color: darkgreen;
+    color: #006400;
     text-decoration: none;
 }
 a:hover {

@@ -33,3 +33,4 @@ contact
 
  * E-Mail: [web@toke.de](mailto:web@toke.de)
  * PGP-Key: [B9D0ADB8](B9D0ADB8.asc)
+ * [XING-Profile](http://www.xing.com/profile/Thomas_Kerpe)

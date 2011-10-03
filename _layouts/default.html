@@ -6,10 +6,9 @@
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Toke's page{% endif %}">
         <meta name="author" content="Thomas Kerpe">
         
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/toke.css">
         <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">
-        <link rel="apple-touch-icon" href="{{ site.url }}/assets/touch-icon.png">
-        <link rel="stylesheet" href="{{ site.url }}/assets/toke.css">
-        <link href="{{ site.url }}/atom.xml" rel="alternate" title="Thomas 'Toke' Kerpe" type="application/atom+xml">
+        <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="Thomas 'Toke' Kerpe">
     </head>
     <body class="{{ page.layout }}">
     
@@ -30,14 +29,12 @@
     <section id="content">
         {{ content }}
     </section>
-        <footer>
-        <span class="date">
-        Posted at {{ site.time | date_to_long_string }}
-        </span>
+    <footer>
+        Posted at <time datetime="{{ site.time| date: "%Y-%m-%d" }}">{{ site.time | date_to_long_string }}</time>
         by <span class="author">toke</span>
     {% if page.license %}
         &middot; <span class="license">
-        License: <a href="{{ page.license[1] }}" rel="license">{{ page.license[0] }}</a>
+        License: <a rel="license noreferrer" href="{{ page.license[1] }}">{{ page.license[0] }}</a>
         </span>
     {% endif %}
     </footer>
@@ -45,9 +42,10 @@
 
     <footer>
     <p>Follow me on
-    <a href="https://plus.google.com/106481926382248079446/">Google+</a><br>
-    <a href="https://github.com/toke/toke.github.com">Get Site Source</a></p>
-    <a href="http://flattr.com/thing/40090/Tokes-Blog" target="_blank"><img src="{{ site.url }}/assets/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+    <a rel="noreferrer" href="https://plus.google.com/106481926382248079446/">Google+</a><br>
+    <a rel="noreferrer" href="https://github.com/toke/toke.github.com">Get Site Source</a></p>
+    <a rel="noreferrer" href="https://flattr.com/thing/40090/Tokes-Blog" target="_blank"><img src="{{ site.url }}/assets/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+    </p>
     </footer>
 
     </div>

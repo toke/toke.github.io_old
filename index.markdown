@@ -15,7 +15,7 @@ I love [Python](http://www.python.org), [CouchDB](http://couchdb.apache.org), [A
 articles
 ========
 
- * [Grundlagen: was passiert beim "surfen"?](http://toke.de/artikel/grundlagen/was-passiert-beim-surfen/index.html) (german)
+ * [Grundlagen: was passiert beim "surfen"?](http://toke.de/artikel/grundlagen/was-passiert-beim-surfen/) (german)
  * [Kernel unter Debian kompilieren](http://toke.de/artikel/linux/debian-kernel-bauen/) (german, -2008)
 
 good reads

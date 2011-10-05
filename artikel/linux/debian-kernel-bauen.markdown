@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Kernel unter Debian kompilieren"
+lang: de
 license: ['CC BY-NC-SA 2.0', 'http://creativecommons.org/licenses/by-nc-sa/2.0/de/']
 ---
 

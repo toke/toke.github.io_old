@@ -2,6 +2,7 @@
 layout: default
 title: Grundlagen was passiert beim "surfen"
 description: "Ein kleiner Überblick für den Interessierten Laien: Adressen im Internet, Domainnamen, IP-Adressen, HTTP"
+lang: de
 license: ['CC BY-NC-SA 2.0', 'http://creativecommons.org/licenses/by-nc-sa/2.0/de/']
 ---
 

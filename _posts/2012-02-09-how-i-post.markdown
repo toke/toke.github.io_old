@@ -1,0 +1,21 @@
+---
+layout: post
+title: How do I Post
+category: blog 
+---
+
+# Or how this site is updated
+
+This site is build via [jekyll](https://github.com/mojombo/jekyll)
+and the sources are coming from a git repository on
+[github](http://github.com). I do
+not write something special about git or jekyll here. Just how the
+"deployment" works.
+
+## Github webhook
+Github has a nice feature called "Service hooks" - especially a
+"Post-Receive URLs" hook. I use this hook to notify my server to
+do a "git pull" on a local repository, then rebuild the site with
+jekyll and rsync changed data to the document root.
+
+To be continued...

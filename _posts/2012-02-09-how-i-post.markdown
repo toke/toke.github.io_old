@@ -18,6 +18,9 @@ Github has a nice feature called "Service hooks" - especially a
 do a "git pull" on a local repository, then rebuild the site with
 jekyll and rsync changed data to the document root.
 
+The webhook endpoint:
+<script src="https://gist.github.com/1781347.js"> </script>
+
 The update itself is done by this little shellscript:
 <script src="https://gist.github.com/1781256.js"> </script>
 

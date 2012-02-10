@@ -69,7 +69,8 @@ true;
 <!--script src="https://gist.github.com/1781347.js"> </script-->
 
 The update itself is done by this little shellscript:
-{% highlight shell %}
+
+{% highlight sh %}
 #!/bin/sh
 
 REPPATH="/home/user/git/localgitrepository"
@@ -83,6 +84,7 @@ if [ -d ${REPPATH} ] ; then
     rsync -rXogpEAt _site/ "${DEPLOYTARGET}"
 fi
 {% endhighlight %}
+
 <!--script src="https://gist.github.com/1781256.js"> </script-->
 
 To be continued...

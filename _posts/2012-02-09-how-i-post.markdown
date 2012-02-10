@@ -25,5 +25,3 @@ The update itself is done by this little shellscript:
 <script src="https://gist.github.com/1781256.js"> </script>
 
 To be continued...
-
-<iframe src="http://toke.de/pad/p/xDdQOf5jZu?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false" width=600 height=400></iframe>

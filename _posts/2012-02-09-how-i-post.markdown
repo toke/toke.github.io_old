@@ -19,9 +19,70 @@ do a "git pull" on a local repository, then rebuild the site with
 jekyll and rsync changed data to the document root.
 
 The webhook endpoint:
-<script src="https://gist.github.com/1781347.js"> </script>
+{% highlight perl %}
+package receivehook;
+use Dancer ':syntax';
+
+our $VERSION = '0.3';
+
+# Configuration for different projects
+my $config = {
+    "PROJECTNAME" => {
+        run => "/home/user/bin/updateblog.sh",
+    },
+};
+
+prefix '/notify';
+
+get '/*' => sub {
+    header 'Allow' => 'POST';
+    status '405';
+    "Not for you\n";
+};
+
+post '/:project' => sub {
+    if (not defined $config->{params->{project}}) {
+        status 'not_found';
+        return "No such project: ".params->{project}."\n";
+    }
+
+    my $payload = params->{'payload'};
+    if (not defined $payload) {
+        status '415';
+        return "I need a payload\n";
+    }
+
+    # Read the configuration for that repo
+    my $repo_config = $config->{$repo->{name}};
+    if (defined $repo_config && defined $repo_config->{run}) {
+        eval {
+            system $repo_config->{run};
+        };
+    }
+
+    return "OK";
+};
+
+true;
+{% endhighlight %}
+
+<!--script src="https://gist.github.com/1781347.js"> </script-->
 
 The update itself is done by this little shellscript:
-<script src="https://gist.github.com/1781256.js"> </script>
+{% highlight shell %}
+#!/bin/sh
+
+REPPATH="/home/user/git/localgitrepository"
+DEPLOYTARGET="/var/www/sites/mydomain"
+LIVEURL="http://mydeploydomain.tld"
+
+if [ -d ${REPPATH} ] ; then
+    cd "${REPPATH}"
+    git pull
+    jekyll --url "${LIVEURL}"
+    rsync -rXogpEAt _site/ "${DEPLOYTARGET}"
+fi
+{% endhighlight %}
+<!--script src="https://gist.github.com/1781256.js"> </script-->
 
 To be continued...

@@ -26,6 +26,4 @@ The update itself is done by this little shellscript:
 
 To be continued...
 
-<iframe
-src='http://toke.de/pad/p/xDdQOf5jZu?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false'
-width=600 height=400>
+<iframe src='http://toke.de/pad/p/xDdQOf5jZu?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=false' width=600 height=400></iframe>

@@ -20,7 +20,7 @@ jekyll and rsync changed data to the document root.
 
 The webhook endpoint:
 {% highlight perl %}
-package receivehook;
+package ReceiveHook;
 use Dancer ':syntax';
 
 our $VERSION = '0.3';

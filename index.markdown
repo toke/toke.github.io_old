@@ -27,7 +27,6 @@ Starting to collect recent good reads:
  * Fermats letzter Satz ([Fermat's last theorem](http://www.simonsingh.net/books/fermats-last-theorem/the-book/) - [Simon Singh](http://www.simonsingh.net/))
  * Goedel Escher Bach - [Douglas Hofstadter](http://www.cogs.indiana.edu/people/homepages/hofstadter.html)
 
-
 contact
 =======
 

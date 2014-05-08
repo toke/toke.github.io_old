@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <title>Testcase X-Browser Textarea behavior</title>
+    </head>
+<body>
+<h1>Testcase X-Browser Textarea behavior</h1>
+
+<p><i>Javascript (Client) only.</i></p>
+	<p>
+		The HTML spec is not very clear on how to interpret the newline after the opening textarea tag.
+		Common sense seems to be to ignore a trailing newline after &lt;textarea&gt;.
+	</p>
+	<p>
+		In the form below you can test how your browser behave in two different cases: with and without
+		trailing newline (\r\n) after the opening textarea tag. If you get the message "The fields differ!"
+		when initially loading this page or have manipulated the textfields in the same way and pressed
+               "Compare" something is wrong.
+	</p>
+	<p>
+		So what's the problem?
+	</p>
+	<ul>
+		<li>Case 1 - browser interpret first NL<br/>
+			With an trailing \r\n after the starting tag:
+			Every submit adds an newline to your data! BAD!
+			Without a trailing \r\n after the start tag. Data will be OK, but HTML does normally ignore
+			Whitespace so this may not very friendly for the author.
+			</li>
+		<li>Case 2 - browser ignores first NL<br/>
+			With an trailing \r\n after the starting tag:
+			Nothing bad will happen here but in case your data following the &lt;textarea&gt;directly
+			and your data starts with a newline it will be eaten.
+			</li>
+	</ul>
+	<p>
+ 		When filling the field nothing bad will happen since the browser knows what the
+		user had already entered. But if the field is populated again it makes a difference.
+		<strong>Almost all browser vendors seem to follow case 2 - ignoring the first newline after &lt;textarea&gt;</strong>.
+	</p>
+	<ul>
+		<li><a href="http://www.w3.org/TR/html4/interact/forms.html#h-17.7">The spec</a></li>
+		<li><a href="http://my.opera.com/community/forums/topic.dml?id=94823">A discussion about that topic in an opera forum</a></li>
+		<li><a href="http://code.djangoproject.com/ticket/8627">Bug #8627 in Django</a></li>
+	</ul>
+
+	<h2>Form 1 with \r\n after the opening tag:</h2>
+    <code><pre>
+        &lt;textarea name="test"&gt;
+        abc
+        &lt;/textarea&gt;
+    </pre></code>
+	<form method="post" name="testform1" action=".">
+		<textarea name="test">
+abc</textarea>
+		<button onclick="textarea_compare(); return false;">Compare</button>
+	</form>
+	<h2>Form 2 without \r\n after the opening tag:</h2>
+    <code><pre>
+        &lt;textarea name="test"&gt;abc&lt;/textarea&gt;
+    </pre></code>
+	<form method="post" name="testform2" action=".">
+		<textarea name="test">abc</textarea>
+		<button onclick="textarea_compare(); return false;">Compare</button>
+	</form>
+
+	<script type="text/javascript">
+		var textarea_compare = function(){
+			var comparison = "The fields differ!\n";
+			if (document.testform1.test.value == document.testform2.test.value) {
+				comparison = "Same data on both fields!\n";
+			}
+			alert(comparison + 'Form 1: \"' + document.testform1.test.value + '\"\nForm 2: \"' + document.testform2.test.value + '\"');
+		}
+		
+		textarea_compare();
+	</script>
+
+
+
+
+<hr/>
+
+
+
+<script src="http://www.toke.de/media/js/jquery-1.2.3.min.js" type="text/javascript"></script>
+<a href="#" onclick="$('#commentadd').show(); return false;" class="comment-add">Kommentieren</a>
+
+<div id="commentadd" style="display:none;">
+<h2>Kommentieren</h2>
+
+
+<form action="/comments/postfree/" method="post">
+<p>Name: <input type="text" id="id_person_name" name="person_name" /></p>
+<p>Kommentar:<br /><textarea name="comment" id="id_comment" rows="10" cols="60"></textarea></p>
+<input type="hidden" name="options" value="ip" />
+<input type="hidden" name="target" value="15:26" />
+<input type="hidden" name="gonzo" value="8e4878bf2b130992c3ebf44ff62f5c0a" />
+<p><input type="submit" name="preview" value="Preview comment" /></p>
+</form>
+
+</div>
+
+</body>
+</html>

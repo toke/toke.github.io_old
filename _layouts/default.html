@@ -1,0 +1,55 @@
+<doctype html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
+    <head>
+        <meta charset="utf-8">
+        <title>{% if page.title %}{{ page.title }} | {% endif %}Toke's page</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Toke's page{% endif %}">
+        <meta name="author" content="Thomas Kerpe">
+        
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/toke.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/syntax.css">
+        <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">
+        <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="Thomas 'Toke' Kerpe">
+    </head>
+    <body class="{{ page.layout }}">
+    
+    <div id="container">
+    <article>
+    <header>
+    <h1><a href="/">{{ page.title }}</a></h1>
+    <p><em></em></p>
+    </header>
+    
+    <nav>
+        <ul>
+        <li><a href="{{ site.url }}/blog/">blog</a></li>
+        <li><a href="http://toke.de">website</a></li>
+        <li><a href="{{ site.url }}/#about_me">about me</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        {{ content }}
+    </section>
+    <footer>
+        Posted at <time datetime="{{ site.time| date: "%Y-%m-%d" }}">{{ site.time | date_to_long_string }}</time>
+        by <span class="author">toke</span>
+    {% if page.license %}
+        &middot; <span class="license">
+        License: <a rel="license noreferrer" href="{{ page.license[1] }}">{{ page.license[0] }}</a>
+        </span>
+    {% endif %}
+    </footer>
+    </article>
+
+    <footer>
+    <p>Follow me on
+    <a rel="noreferrer publisher" href="https://plus.google.com/113744015910472756599">Google+</a>
+    or on Diaspora <a rel="noreferrer nofollow" href="https://pod.geraspora.de/u/toke">toke@pod.geraspora.de</a><br>
+    <a rel="noreferrer" href="https://github.com/toke/toke.github.com">Get Site Source</a></p>
+    <a rel="noreferrer" href="https://flattr.com/thing/40090/Tokes-Blog" target="_blank"><img src="{{ site.url }}/assets/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+    </p>
+    </footer>
+
+    </div>
+    </body>
+</html>

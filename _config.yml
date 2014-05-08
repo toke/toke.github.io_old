@@ -1,0 +1,6 @@
+url: "http://toke.github.io"
+pygments: true
+permalink: pretty
+paginate: 10
+exclude: fabfile.py fabfile.pyc
+

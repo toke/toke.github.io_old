@@ -3,6 +3,8 @@ layout: default
 title: Thomas 'Toke' Kerpe
 ---
 
+Most stuff is moved to http://toke.de
+
 about me
 ========
 
